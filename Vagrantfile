@@ -4,7 +4,6 @@
 Vagrant.configure("2")  do |config|
   config.vm.box = "ubuntu/trusty64"
 
-  config.vm.box = "ubuntu/trusty64"
   config.vm.provision "shell", inline: "sudo apt-get update"
   config.vm.provision "shell", inline: "sudo apt-get install software-properties-common -y"
   config.vm.provision "shell", inline: "sudo apt-get install vim -y"
