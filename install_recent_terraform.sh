@@ -6,7 +6,7 @@ sudo apt-get install jq unzip
 terraform_url=$(curl --silent https://releases.hashicorp.com/index.json | jq '{terraform}' | egrep "linux.*64" | sort -rh | head -1 | awk -F[\"] '{print $4}')
 
 # Create a move into directory.
-cd
+cd ~/
 mkdir terraform && cd $_
 
 # Download Terraform. URI: https://www.terraform.io/downloads.html
